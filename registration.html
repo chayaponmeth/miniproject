@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - IT Open House</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #343535, #343535);
+      height: 100vh;
+    }
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+    .registration-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 60px); /* Subtracting navbar height */
+      padding: 20px;
+    }
+
+    .registration-form {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #007bff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .registration-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_bu.png" alt="Logo" width="120" class="d-inline-block align-text-top" />BU Open House 2024
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto justify-content-end mb-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> 
+
+  <!-- Registration Section -->
+  <section class="registration-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 registration-form">
+          <h1>ลงทะเบียนเข้าร่วมงาน BU Open House - ITI</h1>
+          <p>กรอกข้อมูลด้านล่างเพื่อสมัครเข้าร่วมงาน BU Open House - ITI</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">ชื่อ-นามสกุล</label>
+              <input type="text" class="form-control" id="name" required placeholder="กรุณากรอกชื่อและนามสกุล">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">อีเมล</label>
+              <input type="email" class="form-control" id="email" required placeholder="กรุณากรอกอีเมล">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+              <input type="tel" class="form-control" id="phone" required placeholder="กรุณากรอกเบอร์โทรศัพท์">
+            </div>
+            <div class="mb-3">
+              <label for="program" class="form-label">เลือกสาขาที่สนใจ</label>
+              <select class="form-select" id="program" required>
+                <option selected disabled>เลือกสาขาที่สนใจ...</option>
+                <option value="1">สาขาวิชาเทคโนโลยีสารสนเทศและเทคโนโลยี - Information Technology</option>
+                <option value="2">สาขาวิชาวิทยาการคอมพิวเตอร์ - Computer Science</option>
+                <option value="3">สาขาวิชาเกมและสื่อเชิงโต้ตอบ - Games and Interactive Media</option>
+                <option value="4">สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์ - Computer Science - Data Science and Cybersecurity</option>
+              </select>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">ลงทะเบียน</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>
+      &copy; 2024 by Bangkok University<br>
+      9/1 Moo 5 Phaholyothin Road, Klong Nueng, Klong Luang, Pathumthani 12120
+    </p>
+    <div>
+      <a href="https://www.facebook.com/bangkokuniversity" target="_blank" class="text-blue me-3">Facebook</a>
+      <a href="https://www.instagram.com/bangkok_bu/" target="_blank" class="text-blue">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

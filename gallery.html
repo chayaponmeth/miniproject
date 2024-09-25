@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - IT Open House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: darkgrey;
+            height: 100%;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #343a40;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .container-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        /* Hover effect */
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover .gallery-image {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p, footer a {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo_bu.png" alt="Logo" width="120" class="d-inline-block align-text-top" />
+                BU Open House 2024
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto justify-content-end mb-2">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="registration.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="section text-white bg-dark">
+        <h2 class="text-center text-white mb-4">Gallery</h2>
+        <div class="container-gallery">
+            <!-- Gallery Items -->
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/contents/files/uploads/0333524e-20ee-4dee-ba20-fdf9da363821.webp" alt="">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/contents/files/uploads/984a77f7-6bc9-4791-9d18-b1acffe66241.webp" alt="">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/contents/files/uploads/cddfe8c0-22ef-4a74-8f18-385e3eb619a6.webp" alt="">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/contents/files/uploads/26670385-3129-43c6-8750-e5eaf2ced77b.webp" alt="">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/contents/images/gallery/76b39655-ed10-4ed5-83d7-704f100e37ec.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="https://contents.bu.ac.th/uploads/gallery/20181012163034_iAaCqPo83ZeymOv_9DsOEG3lowXicP2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>
+            &copy; 2024 by Bangkok University<br>
+            9/1 Moo 5 Phaholyothin Road, Klong Nueng, Klong Luang, Pathumthani 12120
+        </p>
+        <div>
+            <a href="https://www.facebook.com/bangkokuniversity" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/bangkok_bu/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

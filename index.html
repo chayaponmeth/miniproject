@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Open House</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Hero Section Styling */
+    .hero {
+      padding: 4rem 0;
+      background-color: #343a40;
+    }
+    
+    /* Event Highlights Styling */
+    .card {
+      border: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-img-top {
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .card-body h5 {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    /* Button Styling */
+    .btn-primary {
+      background-color: blueviolet;
+      border: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background-color: #7b33f5;
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+      .card-img-top {
+        height: 300px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .card-img-top {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo_bu.png" alt="Logo" width="120" class="d-inline-block align-text-top" />
+        BU Open House 2024
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto justify-content-end mb-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="registration.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-light">
+    <div class="container">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/img1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h1 class="mt-4">Welcome to BU Open House 2024</h1>
+      <a href="registration.html" class="btn btn-light">ลงทะเบียนเข้าร่วมงาน</a>
+    </div>
+  </section>
+
+  <!-- Event Highlights -->
+  <section class="py-5 text-light bg-dark">
+    <div class="container text-center">
+        <h2>Event Highlights</h2>
+        <hr class="mb-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Highlight 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images\hi1.jpg" class="card-img-top" alt="Highlight1">
+            <div class="card-body">
+              <h5 class="card-title">PRO-CENTER <br>ลองรู้จักตัวเอง</h5>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi1">
+                เพิ่มเติม <i class="fas fa-info-circle"></i>
+              </button>
+              <div class="collapse mt-3" id="collapsehi1">
+                <p>จุดเริ่มต้นเส้นทางการลองที่ทุกคนจะได้เจอบริเวณอาคาร A3 เป็นจุดลงทะเบียนกลาง
+                    พร้อมให้ข้อมูลเกี่ยวกับคณะและสาขาต่าง ๆ มีรุ่นพี่แนะนำกิจกรรมไฮไลต์น่าสนใจ และตารางเวลาทั้งหมด
+                    อีกทั้งยังมีของเด็ดรอให้ไปลองเล่นคือ ‘FIND YOUR PRO-PASSION QUIZ’
+                    ที่จะพาทุกคนรู้จักความชอบของตัวเองมากขึ้น
+                    คลัสเตอร์ไหน คณะไหนที่เหมาะกับคุณ และเป็นตัวช่วยปักหมุดเส้นทางให้ได้ไปลองเล่นที่คณะต่าง ๆ
+                    ได้ง่ายกว่าเดิม
+                    นอกจากนี้ยังมี PRO-STAGE เป็นกิจกรรมกลางไว้ให้ทุกคนได้มาเอ็นจอยกันอีกด้วย</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Highlight 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images\hi2.jpg" class="card-img-top" alt="Highlight2">
+            <div class="card-body">
+              <h5 class="card-title">CLUSTER CENTER <br>ลองหาแพชชัน</h5>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi2">
+                เพิ่มเติม <i class="fas fa-info-circle"></i>
+              </button>
+              <div class="collapse mt-3" id="collapsehi2">
+                <p>มาลองหาคณะที่ใช่ สาขาและกิจกรรมที่อยากลองได้ที่จุดนี้ Cluster Center จุดรวมพลของคนมี
+                    DNA
+                    เดียวกัน ไม่ว่าจะ Business Creative Innovative และ BU International ด้วย Character ที่ออกแบบมาโดยเฉพาะ
+                    ช่วยบอกตำแหน่งของแต่ละคลัสเตอร์กระจายตามที่ต่าง ๆ เป็นจุดให้ข้อมูลรายชื่อคณะ
+                    พร้อมตารางกิจกรรมในคลัสเตอร์นั้น ๆ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Highlight 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images\hi3.jpg" class="card-img-top" alt="Highlight3">
+            <div class="card-body">
+              <h5 class="card-title">PRO-ACTIVITIES <br>ลองฝึกทําจริง</h5>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi3">
+                เพิ่มเติม <i class="fas fa-info-circle"></i>
+              </button>
+              <div class="collapse mt-3" id="collapsehi3">
+                <p>พื้นที่ของการลองเล่นเพื่อหาความโปรให้กับแพชชันที่ชอบ
+                    ด้วยกิจกรรมมากมายหลากหลายเต็มไปหมดจากคณะสาขาต่าง ๆ เปิดโอกาสให้ทุกคนที่มาเข้าร่วมได้ลองคิดจริง
+                    ลองจับอุปกรณ์จริง ลองลงมือทําจริง ได้ความรู้จากอาจารย์ตัวจริงในสาขา และเปิดโลกไปกับ Pro-Partner ของ BU
+                    ที่เชี่ยวชาญของจริง และมีรุ่นพี่คอยพูดคุย ดูแล แชร์ประสบการณ์ชีวิตมหาลัยของจริงให้ทุกคนสนุกไปด้วยกัน
+                    เป็นการลองเล่นให้เป็นโปร สัมผัสประสบการณ์ของจริงที่ไม่เคยลองได้ที่ไหนนอกจากที่ BU OPEN HOUSE นี้</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="images\hi4.jpg" class="card-img-top" alt="Highlight4">
+              <div class="card-body">
+                <h5 class="card-title">PRO-CERTIFICATE <br>ลองล่าใบเซอร์ใส่พอร์ต</h5>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi4">
+                  เพิ่มเติม <i class="fas fa-info-circle"></i>
+                </button>
+                <div class="collapse mt-3" id="collapsehi4">
+                  <p> ไฮไลต์สําคัญอีกอย่างหนึ่งในปีนี้นอกจากการลองเล่นอย่างสมจริงแล้ว
+                    อีกหนึ่งของสําคัญที่จะได้กลับไปคือ ‘E-Certificate’ ช่วยการันตีความโปรที่คุณได้ลองมากมาย ด้วยการสแกน Qr
+                    Code
+                    ที่จุดร่วมกิจกรรม เพื่อรับใบเซอร์กลับไปสะสมลงพอร์ตอัปสกิลกันอย่างปัง ๆ ได้เลย</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images\hi5.jpg" class="card-img-top" alt="Highlight5">
+              <div class="card-body">
+                <h5 class="card-title">FLAVORFUL FAIR <br>ลองชิมร้านมือโปร</h5>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi5">
+                  เพิ่มเติม <i class="fas fa-info-circle"></i>
+                </button>
+                <div class="collapse mt-3" id="collapsehi5">
+                  <p>มา BU OPEN HOUSE ปีนี้ไม่มีอด นอกจากจะได้ลองเล่นระดับโปรแล้ว เรายังมีร้านอาหารสุด Pro
+                    ที่มีชื่อเสียงทั่วประเทศ ทั้งคาวหวานมาให้ได้ลองชิมกันถึงที่ นอกจากนี้ยังโชว์ความ Pro
+                    ด้วยร้านอาหารชื่อดังที่เป็นผลงานศิษย์เก่ามหาวิทยาลัยกรุงเทพอีกด้วย เช่น ฉันจะกินชาเย็นทุกวัน</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images\hi6.jpg" class="card-img-top" alt="Highlight6">
+              <div class="card-body">
+                <h5 class="card-title">FANCY NIGHT <br>ลองสนุกให้สุด</h5>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehi6">
+                  เพิ่มเติม <i class="fas fa-info-circle"></i>
+                </button>
+                <div class="collapse mt-3" id="collapsehi6">
+                  <p>หลังจากลองเล่นกับทุกกิจกรรมแล้ว มาปิดท้ายวันด้วยคอนเสิร์ตให้มันส์สุดเหวี่ยง
+                    กับศิลปินสุด
+                    Pro ชื่อดังที่รอให้ทุกคนมาสนุกให้สุดไปกับคอนเสิร์ตและโชว์พิเศษ ไม่ว่าจะ 4EVE, DICE, MXFRUIT,
+                    DIDIxDADA,
+                    FELLOW FELLOW, BAMM พร้อมเอ็นจอยกับอาหารหลากหลายที่จะมาช่วยเติมพลังก่อนกลับบ้าน</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>
+      &copy; 2024 by Bangkok University<br>
+      9/1 Moo 5 Phaholyothin Road, Klong Nueng, Klong Luang, Pathumthani 12120
+    </p>
+    <div>
+      <a href="https://www.facebook.com/bangkokuniversity" target="_blank" class="text-blue me-3">Facebook</a>
+      <a href="https://www.instagram.com/bangkok_bu/" target="_blank" class="text-blue">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
